@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """Module defining isWinner function."""
 
-
 def isWinner(x, nums):
     """Function to determine the winner of the prime game."""
     maria_wins = 0
@@ -31,9 +30,9 @@ def isWinner(x, nums):
             maria_turn = not maria_turn
 
     if maria_wins > ben_wins:
-        return "Winner: Maria"
+        return "Maria"
     elif ben_wins > maria_wins:
-        return "Winner: Ben"
+        return "Ben"
     return None
 
 
@@ -50,4 +49,3 @@ def is_prime(n):
 def find_primes(limit):
     """Generate a list of prime numbers up to a given limit."""
     return [n for n in range(2, limit + 1) if is_prime(n)]
-
